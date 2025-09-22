@@ -86,7 +86,7 @@ function SignIn() {
           </div>
         </div>
 
-        <div className='text-right mb-4 text-[#ff4d2d] font-medium'>Forget Password</div>
+        <div className='text-right mb-4 text-[#ff4d2d] font-medium cursor-pointer' onClick={()=>navigate("/forget-password")}>Forget Password</div>
         <button
           className={`w-full font-semibold rounded-lg py-2 transition duration-200 hover:bg-[#e64323] cursor-pointer`}
           style={{ backgroundColor: primaryClr, color: "white" }}
