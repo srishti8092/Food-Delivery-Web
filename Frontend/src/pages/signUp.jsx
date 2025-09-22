@@ -5,9 +5,9 @@ import { FcGoogle } from "react-icons/fc";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { serverUrl } from "../App.jsx";
-function signUp() {
+
+function SignUp() {
   const primaryClr = "#ff4d2d";
-  const hoverClr = "#e64323";
   const bgClr = "#fff9f6";
   const borderClr = "#ddd";
 
@@ -29,6 +29,7 @@ function signUp() {
         role
       },{withCredentials:true})
       console.log("Result : ",result);
+      navigate("/signin");
     } catch(error){
       console.log("Error : ",error);
     }
@@ -167,4 +168,4 @@ function signUp() {
   );
 }
 
-export default signUp;
+export default SignUp;
